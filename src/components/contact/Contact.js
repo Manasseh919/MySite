@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
-import Title from '../layouts/Title';
-import ContactLeft from './ContactLeft';
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import ContactLeft from "./ContactLeft";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -164,6 +164,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

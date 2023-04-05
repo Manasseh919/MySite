@@ -1,22 +1,28 @@
-import React from 'react'
+import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiFigma, SiNextdotjs ,SiNodedotjs} from "react-icons/si";
 
 const LeftBanner = () => {
-    const [text] = useTypewriter({
-      words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
-      loop: true,
-      typeSpeed: 20,
-      deleteSpeed: 10,
-      delaySpeed: 2000,
-    });
+  const [text] = useTypewriter({
+    words: [
+      "Front-end Developer",
+      "Full Stack Developer.",
+      "Mobile App developer.",
+      "Website Developer",
+    ],
+    loop: true,
+    typeSpeed: 20,
+    deleteSpeed: 10,
+    delaySpeed: 2000,
+  });
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
         <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm <span className="text-designColor capitalize">John doe</span>
+          Hi, I'm{" "}
+          <span className="text-designColor capitalize">Manasseh Ameyow</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
@@ -27,26 +33,32 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+          As a skilled junior software engineer, I have extensive experience in
+          web and mobile development. My expertise enables me to design and
+          develop robust, scalable, and high-performing software solutions that
+          meet clients' specific needs. With a strong focus on quality and
+          efficiency, I am dedicated to delivering top-notch results while
+          adhering to project timelines.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me in
+            Find me on
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
+            {/* <span className="bannerIcon">
               <FaFacebookF />
             </span>
             <span className="bannerIcon">
               <FaTwitter />
-            </span>
-            <span className="bannerIcon">
+            </span> */}
+            <a
+              href="https://www.linkedin.com/in/manasseh-ameyow-6a3298203/"
+              className="bannerIcon"
+            >
               <FaLinkedinIn />
-            </span>
+            </a>
           </div>
         </div>
         <div>
@@ -56,6 +68,9 @@ const LeftBanner = () => {
           <div className="flex gap-4">
             <span className="bannerIcon">
               <FaReact />
+            </span>
+            <span className="bannerIcon">
+              <SiNodedotjs/>
             </span>
             <span className="bannerIcon">
               <SiNextdotjs />
@@ -71,6 +86,6 @@ const LeftBanner = () => {
       </div>
     </div>
   );
-}
+};
 
-export default LeftBanner
+export default LeftBanner;
